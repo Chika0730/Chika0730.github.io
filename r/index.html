@@ -1,43 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
 
-		<title>reveal.js</title>
+        <title>プレゼンテーション資料</title>
 
-		<link rel="stylesheet" href="dist/reset.css" />
-		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" />
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- スライド1：タイトル -->
+                <section>
+                    <h2>発表タイトル</h2>
+                    <p>サブタイトルや概要などをここに記載します</p>
+                    <p><small>発表者：氏名</small></p>
+                </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="dist/plugin/notes.js"></script>
-		<script src="dist/plugin/markdown.js"></script>
-		<script src="dist/plugin/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+                <!-- スライド2：アジェンダ・目次 -->
+                <section>
+                    <h3>本日のお品書き</h3>
+                    <ul>
+                        <li>はじめに</li>
+                        <li>主なトピック・概要</li>
+                        <li>まとめ・今後の課題</li>
+                    </ul>
+                </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			});
-		</script>
-	</body>
+                <!-- スライド3：本文と箇条書き -->
+                <section>
+                    <h3>主なトピック</h3>
+                    <p>ここに全体の簡単な導入文を入れます。</p>
+                    <ul>
+                        <li>重要なポイントその1</li>
+                        <li>補足説明や詳細テキストその2</li>
+                        <li>参考情報や例示テキストその3</li>
+                    </ul>
+                </section>
+
+                <!-- スライド4：まとめ -->
+                <section>
+                    <h3>まとめ</h3>
+                    <p>本日の発表の締めくくりテキストです。</p>
+                    <p>ご清聴ありがとうございました！</p>
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="dist/plugin/notes.js"></script>
+        <script src="dist/plugin/markdown.js"></script>
+        <script src="dist/plugin/highlight.js"></script>
+        <script>
+            Reveal.initialize({
+                hash: true,
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            });
+        </script>
+    </body>
 </html>
